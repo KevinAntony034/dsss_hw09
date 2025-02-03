@@ -14,7 +14,7 @@ async def process(update: Update, context: CallbackContext) -> None:
     await update.message.reply_text("Hi! I am your AI assistant. How can I help you?") #Processing
 
 def main() -> None:
-    API_TOKEN = "7567125441:AAE2AO_nsTnkrn6k882gvmSOMX_jwgEsX1I" #Api Token
+    API_TOKEN = "Api token here" #Api Token
     applicationn = Application.builder().token(API_TOKEN).build() 
     applicationn.add_handler(CommandHandler("start", process))
     applicationn.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, start))
