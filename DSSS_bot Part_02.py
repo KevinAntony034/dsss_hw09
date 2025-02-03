@@ -31,7 +31,7 @@ async def process(update: Update, context: CallbackContext) -> None:   #Processi
     await update.message.reply_text(reply)
 
 def main():
-    API_TOKEN = "7567125441:AAE2AO_nsTnkrn6k882gvmSOMX_jwgEsX1I"                   #Api token
+    API_TOKEN = "API Token Here"                   #Api token
     applicationn = Application.builder().token(API_TOKEN).build()                  #starting the Bot
     applicationn.add_handler(CommandHandler("start", start))
     applicationn.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, process))
